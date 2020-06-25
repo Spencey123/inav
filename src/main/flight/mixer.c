@@ -356,32 +356,17 @@ void FAST_CODE writeMotors(void)
                     );
                 }
             }
-            
             else {
-                if (!IS_RC_MODE_ACTIVE(BOXBEEPERON)) {
-                    motorValue = handleOutputScaling(
-                        motor[i],
-                        throttleIdleValue,
-                        DSHOT_DISARM_COMMAND,
-                        motorConfig()->mincommand,
-                        motorConfig()->maxthrottle,
-                        DSHOT_MIN_THROTTLE,
-                        DSHOT_MAX_THROTTLE,
-                        true
-                    );
-                }
-                else {
-                    motorValue = handleOutputScaling(
-                        motor[i],
-                        throttleIdleValue,
-                        DSHOT_DISARM_COMMAND,
-                        motorConfig()->mincommand,
-                        motorConfig()->maxthrottle,
-                        DSHOT_MIN_THROTTLE,
-                        DSHOT_MAX_THROTTLE,
-                        false
-                    );
-                }
+                motorValue = handleOutputScaling(
+                    motor[i],
+                    throttleIdleValue,
+                    DSHOT_DISARM_COMMAND,
+                    motorConfig()->mincommand,
+                    motorConfig()->maxthrottle,
+                    DSHOT_MIN_THROTTLE,
+                    DSHOT_MAX_THROTTLE,
+                    true
+                );
             }
         }
         else {

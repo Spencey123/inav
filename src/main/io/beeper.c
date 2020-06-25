@@ -303,7 +303,7 @@ void beeperUpdate(timeUs_t currentTimeUs)
         if (feature(FEATURE_GPS)) {
             beeperGpsStatus();
         } else {
-          //  beeper(BEEPER_RX_SET);
+            beeper(BEEPER_RX_SET);
         }
 #else
         beeper(BEEPER_RX_SET);
