@@ -348,8 +348,8 @@ void FAST_CODE writeMotors(void)
                         motor[i],
                         throttleRangeMax,
                         DSHOT_DISARM_COMMAND,
-                        throttleRangeMin,
                         throttleRangeMax,
+                        throttleRangeMin,
                         DSHOT_MIN_THROTTLE,
                         DSHOT_3D_DEADBAND_LOW,
                         false
