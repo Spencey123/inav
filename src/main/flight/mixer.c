@@ -98,7 +98,7 @@ PG_RESET_TEMPLATE(mixerConfig_t, mixerConfig,
 #define DEFAULT_PWM_RATE        400
 #endif
 
-#define DEFAULT_MAX_THROTTLE    2000
+#define DEFAULT_MAX_THROTTLE    1900
 
 PG_REGISTER_WITH_RESET_TEMPLATE(motorConfig_t, motorConfig, PG_MOTOR_CONFIG, 5);
 
